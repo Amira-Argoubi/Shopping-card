@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping card</title>
+    <link
+      href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
+"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="styleshop.css" />
+  </head>
+
+  <body>
+    <!-------navbar------->
+    <nav
+      class="navbar navbar-expand-lg navbar navbar-light"
+      style="background-color: #e3f2fd;"
+    >
+      <img class="logo" src="logo.png" width="100" height="100" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><span><i class="fas fa-cart-arrow-down chariot"></i></span> CART (TDN) :<span id="totalCart">0</span></a
+            >
+          </li>
+        </ul>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <!-- Button trigger modal -->
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">CONTACT</button>
+
+          <button
+            type="button"
+            class="btn btn-primary mod"
+            data-toggle="modal"
+            data-target="#sign-up"
+          >
+            Sign UP
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="sign-up"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Join US Now
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Name</span>
+                    </div>
+
+                    <input
+                      type="text"
+                      class="form-control name"
+                      placeholder="First name"
+                      aria-label="name"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                   
+                  <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Name</span>
+                    </div>
+
+                    <input
+                      type="text"
+                      class="form-control name"
+                      placeholder="Last name"
+                      aria-label="name"
+                      aria-describedby="basic-addon1"
+                    />
+                   
+                  </div>
+                  <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Name</span>
+                    </div>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="E-mail"
+                      aria-label="name"
+                      aria-describedby="basic-addon1" id="mail"
+                    />
+                   
+                  </div>
+                  <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Name</span>
+                    </div>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Password"
+                      aria-label="name"
+                      aria-describedby="basic-addon1" id="password"                    />
+                   
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary" id="sign btn">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </form>
+           
+      </div>
+    </nav>
+
+    <!-----carousel------->
+    <div class="headerSlide">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="photo1.jpg" class="d-block w-100" />
+            <div class="headerSlideCaption">
+              <h5 class="headerSlideCaptionTitre titre">
+                Still Shinning & Glowing
+              </h5>
+              <button type="button" class="btn btn-outline-success btn-lg but">
+                Start Shopping
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="sac4.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="sac6.jpg" class="d-block w-100" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!---------  End Slide  ------->
+
+    <!------------message------->
+    <center>
+      <div class="message">
+        <h1>Select your FAVOURITE!!!</h1>
+      </div>
+    </center>
+    <!-------products-->
+
+    <div class="container">
+      <div class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="sac1.jpg"
+          alt="Card image cap"
+          height="200"
+        />
+        <div class="card-body">
+          <h3 class="card-title">product 1</h3>
+          <h5 class="card-text">200</h5>
+          <button class="ad">Add Cart</button>
+          <span><i class="fas fa-cart-arrow-down"></i> <span class="totalQ">0</span></span>
+          <br />
+          <button class="del">delete</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="sac2.jpg"
+          alt="Card image cap"
+          height="200"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Product 2</h3>
+          <h5 class="card-text">150</h5>
+          <button class="ad">Add Cart</button>
+          <span><i class="fas fa-cart-arrow-down"></i> <span class="totalQ">0</span></span>
+          <br />
+          <button class="del">delete</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="sac3.jpg"
+          alt="Card image cap"
+          height="200"
+        />
+        <div class="card-body">
+          <h3 class="card-title">product 3</h3>
+          <h5 class="card-text">95</h5>
+
+          <button class="ad">Add Cart</button>
+          <span><i class="fas fa-cart-arrow-down"></i> <span class="totalQ">0</span></span>
+          <br />
+          <button class="del">delete</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="sac4.jpg"
+          alt="Card image cap"
+          height="200"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Product 4</h3>
+          <h5 class="card-text">100</h5>
+          <button class="ad">Add Cart</button>
+          <span><i class="fas fa-cart-arrow-down"></i> <span class="totalQ">0</span></span>
+          <br />
+          <button class="del">delete</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="sac5.jpg"
+          alt="Card image cap"
+          height="200"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Product 5</h3>
+          <h5 class="card-text">90</h5>
+          <button class="ad">Add Cart</button>
+          <span><i class="fas fa-cart-arrow-down"></i> <span class="totalQ">0</span></span>
+          <br />
+          <button class="del">delete</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          class="card-img-top"
+          src="sac6.jpg"
+          alt="Card image cap"
+          height="200"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Product 6</h3>
+          <h5 class="card-text">155</h5>
+          <button class="ad">Add Cart</button>
+          <span ><i class="fas fa-cart-arrow-down"></i> <span class="totalQ">0</span></span>
+          <br />
+          <button class="del">delete</button>
+        </div>
+      </div>
+    </div>
+    <!------------message footer------->
+    <center>
+      <div class="message">
+        <h1>
+          Don't Forget!!!<br />
+          Follow US 
+        </h1>
+      </div>
+    </center>
+    <!----footer----->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <img class="logo" src="logo.png" width="100" height="100" />
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#">Adress: 1003 Cité Olympique</a></li>
+                  <li><a href="#">Email: argoubi.amiraa@gmail.com</a></li>
+                  <li><a href="#">Telephone:(216) 55 654 722</a></li>
+                 </li>
+      
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad mr-5">
+                <h4></h4>
+       
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <!--Column1-->
+              
+                           <ul class="social-network social-circle">
+                   <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                   <li><a href="#" class="icoInstagram" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+              
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad mr-5">
+                <h4></h4>
+       
+              </div>
+            </div>
+              <div class="col-md">
+      
+                   <div class="input-group ml-5">
+        
+        <input type="text" class="form-control" placeholder="Newsletter" aria-describedby="basic-addon1"/>
+      </div>
+      </div>
+      
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Copyright 2020 Amira ARGOUBI</p>
+              </div>
+          </div>
+      
+      
+        </div>
+        </div>
+      </footer>
+    
+
+    <!----script-------->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="shopdom.js"></script>
+  </body>
+</html>
